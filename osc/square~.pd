@@ -1,0 +1,9 @@
+#N canvas 585 366 450 300 12;
+#X obj 13 37 phasor~;
+#X obj 13 61 expr~ if($v1>0.5 \, 1 \, 0);
+#X obj 13 85 outlet~;
+#X obj 13 14 inlet;
+#X connect 0 0 1 0;
+#X connect 1 0 2 0;
+#X connect 3 0 0 0;
+#X coords 0 300 1 299 85 60 0;
